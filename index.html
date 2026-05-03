@@ -1,1 +1,1669 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Yesteryear Book Club</title></head><body><p>Loading...</p></body></html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yesteryear Book Club</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cheltenham:ital,wght@0,400;0,700;1,400&family=Franklin+Gothic+Medium&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+
+body {
+
+  background: #fff;
+
+  color: #1a1a1a;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+
+}
+
+
+
+/* ── TOP BAR ── */
+
+.top-bar {
+
+  background: #000;
+
+  color: #fff;
+
+  text-align: center;
+
+  padding: 10px 20px;
+
+  font-size: 11px;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 500;
+
+}
+
+
+
+/* ── MASTHEAD ── */
+
+.masthead {
+
+  border-bottom: 3px solid #000;
+
+  padding: 28px 20px 20px;
+
+  text-align: center;
+
+}
+
+
+
+.masthead-eyebrow {
+
+  font-size: 11px;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+  color: #c8102e;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+
+.masthead-title {
+
+  font-family: 'Playfair Display', Georgia, serif;
+
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+
+  font-weight: 700;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.02em;
+
+  color: #000;
+
+  margin-bottom: 12px;
+
+}
+
+
+
+.masthead-deck {
+
+  font-family: 'Source Serif 4', Georgia, serif;
+
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+
+  font-weight: 300;
+
+  font-style: italic;
+
+  color: #444;
+
+  max-width: 520px;
+
+  margin: 0 auto 16px;
+
+  line-height: 1.5;
+
+}
+
+
+
+.masthead-byline {
+
+  font-size: 11px;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  color: #888;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+
+.masthead-byline span { color: #c8102e; font-weight: 600; }
+
+
+
+/* ── RULE ── */
+
+.rule { border: none; border-top: 1px solid #e0e0e0; margin: 0; }
+
+.rule-thick { border: none; border-top: 2px solid #000; margin: 0; }
+
+
+
+/* ── LAYOUT ── */
+
+.container {
+
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  padding: 0 24px;
+
+}
+
+
+
+/* ── HERO BOOK ── */
+
+.hero {
+
+  padding: 40px 0 32px;
+
+  display: grid;
+
+  grid-template-columns: 140px 1fr;
+
+  gap: 28px;
+
+  align-items: start;
+
+}
+
+
+
+.hero-cover {
+
+  background: #f2ddd5;
+
+  padding: 20px 16px;
+
+  text-align: center;
+
+  box-shadow: 4px 4px 0 #000;
+
+}
+
+
+
+.hero-cover-title {
+
+  font-family: 'Playfair Display', serif;
+
+  font-weight: 700;
+
+  font-size: 1.1rem;
+
+  color: #c8102e;
+
+  line-height: 1.2;
+
+  margin-bottom: 6px;
+
+}
+
+
+
+.hero-cover-author {
+
+  font-size: 9px;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  color: #888;
+
+}
+
+
+
+.hero-text {}
+
+
+
+.hero-text h2 {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 1.05rem;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+  color: #000;
+
+}
+
+
+
+.hero-text p {
+
+  font-family: 'Source Serif 4', serif;
+
+  font-size: 0.95rem;
+
+  line-height: 1.75;
+
+  color: #333;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.hero-text p strong { font-weight: 600; color: #000; }
+
+
+
+/* ── SECTION LABEL ── */
+
+.section-label {
+
+  font-size: 10px;
+
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+
+  font-weight: 600;
+
+  color: #888;
+
+  font-family: 'Inter', sans-serif;
+
+  padding: 28px 0 12px;
+
+  border-bottom: 2px solid #000;
+
+  margin-bottom: 0;
+
+}
+
+
+
+/* ── MEETINGS ── */
+
+.meeting-list { margin: 0; }
+
+
+
+.meeting-row {
+
+  display: grid;
+
+  grid-template-columns: 28px 1fr;
+
+  gap: 16px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #e0e0e0;
+
+  align-items: start;
+
+}
+
+
+
+.meeting-num {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 1.4rem;
+
+  font-weight: 700;
+
+  color: #e0e0e0;
+
+  line-height: 1;
+
+  padding-top: 2px;
+
+}
+
+
+
+.meeting-body {}
+
+.meeting-label {
+
+  font-size: 10px;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color: #c8102e;
+
+  font-weight: 600;
+
+  margin-bottom: 3px;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+
+.meeting-title {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 1.05rem;
+
+  font-weight: 700;
+
+  color: #000;
+
+  margin-bottom: 4px;
+
+}
+
+
+
+.meeting-pages {
+
+  font-size: 11px;
+
+  color: #aaa;
+
+  letter-spacing: 0.06em;
+
+  margin-bottom: 6px;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+
+.meeting-desc {
+
+  font-family: 'Source Serif 4', serif;
+
+  font-size: 0.88rem;
+
+  color: #555;
+
+  line-height: 1.65;
+
+}
+
+
+
+/* ── FORM ── */
+
+.form-wrap { padding: 32px 0; }
+
+
+
+.form-stage { display: none; }
+
+.form-stage.active { display: block; }
+
+
+
+.form-stage-head {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 1.4rem;
+
+  font-weight: 700;
+
+  color: #000;
+
+  margin-bottom: 6px;
+
+  line-height: 1.2;
+
+}
+
+
+
+.form-stage-sub {
+
+  font-family: 'Source Serif 4', serif;
+
+  font-size: 0.9rem;
+
+  font-style: italic;
+
+  color: #777;
+
+  margin-bottom: 24px;
+
+}
+
+
+
+.form-field { margin-bottom: 22px; }
+
+
+
+.form-field label {
+
+  display: block;
+
+  font-size: 11px;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  font-weight: 600;
+
+  color: #333;
+
+  font-family: 'Inter', sans-serif;
+
+  margin-bottom: 8px;
+
+}
+
+
+
+.form-field input,
+
+.form-field select {
+
+  width: 100%;
+
+  padding: 11px 14px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 0;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 0.9rem;
+
+  color: #1a1a1a;
+
+  background: #fff;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+}
+
+
+
+.form-field input:focus,
+
+.form-field select:focus {
+
+  outline: none;
+
+  border-color: #000;
+
+}
+
+
+
+.radio-list, .check-list { display: flex; flex-direction: column; gap: 10px; }
+
+
+
+.radio-item, .check-item {
+
+  display: flex;
+
+  gap: 10px;
+
+  align-items: flex-start;
+
+}
+
+
+
+.radio-item input, .check-item input {
+
+  width: auto;
+
+  flex-shrink: 0;
+
+  margin-top: 3px;
+
+  accent-color: #c8102e;
+
+  cursor: pointer;
+
+}
+
+
+
+.radio-item label, .check-item label {
+
+  font-family: 'Source Serif 4', serif;
+
+  font-size: 0.92rem;
+
+  font-weight: 400;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+
+  color: #1a1a1a;
+
+  cursor: pointer;
+
+  line-height: 1.5;
+
+}
+
+
+
+.btn-row { display: flex; gap: 10px; margin-top: 28px; }
+
+
+
+.btn {
+
+  flex: 1;
+
+  padding: 13px 20px;
+
+  font-family: 'Inter', sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  border: none;
+
+  cursor: pointer;
+
+}
+
+
+
+.btn-black { background: #000; color: #fff; }
+
+.btn-black:hover { background: #c8102e; }
+
+.btn-black:disabled { background: #aaa; cursor: not-allowed; }
+
+.btn-outline { background: #fff; color: #000; border: 1px solid #000; }
+
+.btn-outline:hover { background: #f5f5f5; }
+
+
+
+.status-msg {
+
+  font-size: 0.8rem;
+
+  color: #c8102e;
+
+  margin-top: 10px;
+
+  text-align: center;
+
+  font-family: 'Inter', sans-serif;
+
+  min-height: 20px;
+
+}
+
+
+
+/* ── BOOK SEARCH ── */
+
+.search-wrap { position: relative; }
+
+.search-wrap input { padding-right: 40px; }
+
+.search-spin { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 14px; display: none; }
+
+
+
+.book-dropdown {
+
+  border: 1px solid #ccc;
+
+  border-top: none;
+
+  background: #fff;
+
+  max-height: 280px;
+
+  overflow-y: auto;
+
+  display: none;
+
+  position: relative;
+
+  z-index: 10;
+
+}
+
+
+
+.book-option {
+
+  display: flex;
+
+  gap: 12px;
+
+  align-items: center;
+
+  padding: 10px 14px;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid #f0f0f0;
+
+}
+
+
+
+.book-option:hover { background: #f9f9f9; }
+
+
+
+.book-option img {
+
+  width: 32px;
+
+  height: 46px;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+
+  background: #eee;
+
+}
+
+
+
+.book-option-text strong { display: block; font-size: 0.82rem; color: #000; font-family: 'Inter', sans-serif; }
+
+.book-option-text span { font-size: 0.75rem; color: #888; font-family: 'Inter', sans-serif; }
+
+.no-results { padding: 14px; font-size: 0.85rem; color: #999; text-align: center; font-family: 'Inter', sans-serif; font-style: italic; }
+
+
+
+.selected-preview {
+
+  display: none;
+
+  gap: 14px;
+
+  align-items: center;
+
+  padding: 12px 14px;
+
+  background: #f9f9f9;
+
+  border: 1px solid #e0e0e0;
+
+  margin-top: 8px;
+
+}
+
+
+
+.selected-preview img { width: 44px; height: 62px; object-fit: cover; box-shadow: 2px 2px 0 #ccc; }
+
+.selected-preview-info strong { display: block; font-size: 0.88rem; color: #000; font-family: 'Inter', sans-serif; }
+
+.selected-preview-info span { font-size: 0.78rem; color: #888; font-family: 'Inter', sans-serif; }
+
+.remove-btn { margin-left: auto; background: none; border: none; font-size: 0.75rem; color: #aaa; cursor: pointer; text-decoration: underline; font-family: 'Inter', sans-serif; flex: none; padding: 0; letter-spacing: 0; text-transform: none; }
+
+
+
+/* ── CONFIRMATION ── */
+
+.confirmation-screen { padding: 40px 0 20px; text-align: center; }
+
+.confirmation-screen h2 {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 2.4rem;
+
+  font-weight: 700;
+
+  color: #000;
+
+  margin-bottom: 10px;
+
+}
+
+.confirmation-screen p {
+
+  font-family: 'Source Serif 4', serif;
+
+  font-size: 1rem;
+
+  color: #555;
+
+  margin-bottom: 6px;
+
+  line-height: 1.7;
+
+}
+
+
+
+.nightstand-prompt {
+
+  margin-top: 36px;
+
+  padding: 28px;
+
+  border: 2px solid #000;
+
+  text-align: left;
+
+}
+
+
+
+.nightstand-prompt h3 {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 1.2rem;
+
+  font-weight: 700;
+
+  margin-bottom: 6px;
+
+}
+
+
+
+.nightstand-prompt p {
+
+  font-family: 'Source Serif 4', serif;
+
+  font-size: 0.88rem;
+
+  color: #666;
+
+  font-style: italic;
+
+  line-height: 1.7;
+
+  margin-bottom: 18px;
+
+  text-align: left;
+
+}
+
+
+
+/* ── GALLERY ── */
+
+#gallery-section { padding: 40px 0; display: none; }
+
+
+
+.cover-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+
+  gap: 16px;
+
+  margin-top: 16px;
+
+}
+
+
+
+.cover-card { text-align: center; }
+
+.cover-card img {
+
+  width: 100%;
+
+  aspect-ratio: 2/3;
+
+  object-fit: cover;
+
+  display: block;
+
+  box-shadow: 3px 3px 0 #e0e0e0;
+
+  background: #f0f0f0;
+
+}
+
+.cover-card .c-name {
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  color: #c8102e;
+
+  font-weight: 600;
+
+  margin-top: 6px;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+.cover-card .c-title {
+
+  font-family: 'Source Serif 4', serif;
+
+  font-size: 0.75rem;
+
+  font-style: italic;
+
+  color: #333;
+
+  margin-top: 2px;
+
+  line-height: 1.3;
+
+}
+
+
+
+.gallery-empty {
+
+  grid-column: 1/-1;
+
+  text-align: center;
+
+  font-family: 'Source Serif 4', serif;
+
+  font-style: italic;
+
+  color: #ccc;
+
+  padding: 30px;
+
+}
+
+
+
+/* ── FOOTER ── */
+
+footer {
+
+  border-top: 2px solid #000;
+
+  padding: 20px 24px;
+
+  text-align: center;
+
+  font-size: 10px;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color: #aaa;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .hero { grid-template-columns: 110px 1fr; gap: 18px; }
+
+  .hero-cover { padding: 14px 10px; }
+
+  .cover-grid { grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 12px; }
+
+  .btn-row { flex-direction: column; }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="top-bar">Submissions close Monday 10am Eastern</div>
+
+
+
+<div class="masthead">
+
+  <div class="masthead-eyebrow">The Cool Girl Book Club</div>
+
+  <h1 class="masthead-title">We're Reading<br><em>Yesteryear</em></h1>
+
+  <p class="masthead-deck">A tradwife influencer wakes up in 1855 and has to figure out if she's on a reality show, in a time warp, or being punished by God. We're going to have real thoughts about it.</p>
+
+  <div class="masthead-byline">Five meetings · All on Zoom · Curated by <span>Alison</span></div>
+
+</div>
+
+
+
+<hr class="rule-thick">
+
+
+
+<div class="container">
+
+
+
+  <div class="hero">
+
+    <div class="hero-cover">
+
+      <div class="hero-cover-title">YESTERYEAR</div>
+
+      <div class="hero-cover-author">Caro Claire Burke</div>
+
+    </div>
+
+    <div class="hero-text">
+
+      <h2>Okay. Here's the deal.</h2>
+
+      <p>This is a <strong>cool girl book club.</strong> Not a place for vague conversations about whether we "like" the protagonist. Not a place where you prep talking points from ChatGPT.</p>
+
+      <p>We are going to have <strong>real thoughts.</strong> Critical thoughts. The kind of conversations you want to have when the algorithm is exhausting and you just want to sit with people who care about what things mean.</p>
+
+      <p>Btw, I'm patiently waiting for my copy in the mail. It's taking like 10 days to get here.</p>
+
+    </div>
+
+  </div>
+
+
+
+  <hr class="rule">
+
+
+
+  <div class="section-label">The Schedule</div>
+
+
+
+  <div class="meeting-list">
+
+    <div class="meeting-row">
+
+      <div class="meeting-num">1</div>
+
+      <div class="meeting-body">
+
+        <div class="meeting-label">The Kickoff</div>
+
+        <div class="meeting-title">Come as you are</div>
+
+        <div class="meeting-pages">No reading required · Zoom</div>
+
+        <div class="meeting-desc">We meet each other. We talk about why this book, why now, and what critical thought means when everything is algorithmic noise.</div>
+
+      </div>
+
+    </div>
+
+    <div class="meeting-row">
+
+      <div class="meeting-num">2</div>
+
+      <div class="meeting-body">
+
+        <div class="meeting-label">The Setup</div>
+
+        <div class="meeting-title">Natalie Mills goes to work</div>
+
+        <div class="meeting-pages">Pages 1–133 · Zoom</div>
+
+        <div class="meeting-desc">Perfect farm. Perfect husband. Perfect fraud. We see the scaffolding — the nannies, the industrial ovens, the political dynasty — and then she wakes up somewhere that makes all of it feel very, very real.</div>
+
+      </div>
+
+    </div>
+
+    <div class="meeting-row">
+
+      <div class="meeting-num">3</div>
+
+      <div class="meeting-body">
+
+        <div class="meeting-label">The Survival Arc</div>
+
+        <div class="meeting-title">Is this real?</div>
+
+        <div class="meeting-pages">Pages 134–267 · Zoom</div>
+
+        <div class="meeting-desc">Natalie is stuck. Possibly in 1855. Possibly in hell. Definitely without a ring light. Reality show? Time travel? Divine punishment? We think about what we think.</div>
+
+      </div>
+
+    </div>
+
+    <div class="meeting-row">
+
+      <div class="meeting-num">4</div>
+
+      <div class="meeting-body">
+
+        <div class="meeting-label">The Unraveling</div>
+
+        <div class="meeting-title">The ending</div>
+
+        <div class="meeting-pages">Pages 268–400 · Zoom</div>
+
+        <div class="meeting-desc">Every reviewer has warned us. The last 30 pages will break something. Come prepared. We discuss in full, with feeling.</div>
+
+      </div>
+
+    </div>
+
+    <div class="meeting-row">
+
+      <div class="meeting-num">5</div>
+
+      <div class="meeting-body">
+
+        <div class="meeting-label">The After Party</div>
+
+        <div class="meeting-title">What do we say?</div>
+
+        <div class="meeting-pages">Full book · Full feelings · Zoom</div>
+
+        <div class="meeting-desc">We've finished. We've processed. The satire, the feminism, the rage. What does Natalie say about women and performance and America in 2026? What do we say?</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <hr class="rule">
+
+  <div class="section-label">Sign Up</div>
+
+
+
+  <div class="form-wrap">
+
+
+
+    <!-- STAGE 1 -->
+
+    <div class="form-stage active" id="stage-1">
+
+      <div class="form-stage-head">How committed are you?</div>
+
+      <div class="form-stage-sub">Be honest. We can work with it.</div>
+
+      <div class="form-field">
+
+        <div class="radio-list">
+
+          <div class="radio-item"><input type="radio" id="f5" name="format" value="5 meetings — fully in" /><label for="f5">I love this. Fully committed to all five meetings.</label></div>
+
+          <div class="radio-item"><input type="radio" id="f1" name="format" value="1 meeting only" /><label for="f1">Alison, this is too much. One meeting only.</label></div>
+
+          <div class="radio-item"><input type="radio" id="ff" name="format" value="flexible — let's talk" /><label for="ff">Something in between. I could be talked into more.</label></div>
+
+        </div>
+
+      </div>
+
+      <div class="btn-row">
+
+        <button class="btn btn-black" onclick="nextStage(2)">Next: Timing →</button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- STAGE 2 -->
+
+    <div class="form-stage" id="stage-2">
+
+      <div class="form-stage-head">When can you actually show up?</div>
+
+      <div class="form-stage-sub">All meetings are on Zoom. Pick everything that works for you.</div>
+
+      <div class="form-field">
+
+        <label>Your timezone</label>
+
+        <select id="timezone">
+
+          <option value="">Select one</option>
+
+          <option>Pacific (PST)</option>
+
+          <option>Mountain (MST)</option>
+
+          <option>Central (CST)</option>
+
+          <option>Eastern (EST)</option>
+
+          <option>Other</option>
+
+        </select>
+
+      </div>
+
+      <div class="form-field">
+
+        <label>When are you free?</label>
+
+        <div class="check-list">
+
+          <div class="check-item"><input type="checkbox" name="times" value="Morning (7–11am)" /><label>Morning (7–11am)</label></div>
+
+          <div class="check-item"><input type="checkbox" name="times" value="Lunch (12–1pm)" /><label>Lunch hour (12–1pm)</label></div>
+
+          <div class="check-item"><input type="checkbox" name="times" value="Afternoon (2–5pm)" /><label>Afternoon (2–5pm)</label></div>
+
+          <div class="check-item"><input type="checkbox" name="times" value="Evening (8pm+)" /><label>Evening (8pm+, after kids are down)</label></div>
+
+          <div class="check-item"><input type="checkbox" name="times" value="Weekend" /><label>Weekend</label></div>
+
+        </div>
+
+      </div>
+
+      <div class="btn-row">
+
+        <button class="btn btn-outline" onclick="nextStage(1)">← Back</button>
+
+        <button class="btn btn-black" onclick="nextStage(3)">Next: One Question →</button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- STAGE 3 -->
+
+    <div class="form-stage" id="stage-3">
+
+      <div class="form-stage-head">Almost done.</div>
+
+      <div class="form-stage-sub">What book have you been "about to start" for over a year? You know the one.</div>
+
+      <div class="form-field">
+
+        <label>Your first name</label>
+
+        <input type="text" id="yourname" placeholder="e.g. Sarah" />
+
+      </div>
+
+      <div class="form-field">
+
+        <label>The book you keep lying to yourself about</label>
+
+        <input type="text" id="magic-answer" placeholder="Title..." />
+
+      </div>
+
+      <div class="btn-row">
+
+        <button class="btn btn-outline" onclick="nextStage(2)">← Back</button>
+
+        <button class="btn btn-black" id="submit-btn" onclick="submitForm()">I'm In →</button>
+
+      </div>
+
+      <div class="status-msg" id="submit-status"></div>
+
+    </div>
+
+
+
+    <!-- STAGE 4: CONFIRMATION + NIGHTSTAND -->
+
+    <div class="form-stage" id="stage-confirmation">
+
+      <div class="confirmation-screen">
+
+        <h2>You're in.</h2>
+
+        <p>Alison will be in touch with your Zoom link.</p>
+
+        <p>But first — one more thing.</p>
+
+
+
+        <div class="nightstand-prompt">
+
+          <h3>Show us your nightstand.</h3>
+
+          <p>Search for the book that's been sitting there aspirationally. We all have one. We know you're not reading it. That's entirely the point. Your cover joins the group library below.</p>
+
+
+
+          <div class="form-field" style="margin-bottom:0;">
+
+            <label>Search for your book</label>
+
+            <div class="search-wrap">
+
+              <input type="text" id="book-search" placeholder="Start typing a title..." oninput="searchBooks(this.value)" autocomplete="off" />
+
+              <span class="search-spin" id="search-spinner">⏳</span>
+
+            </div>
+
+            <div class="book-dropdown" id="book-dropdown"></div>
+
+            <div class="selected-preview" id="selected-preview">
+
+              <img id="sel-cover" src="" alt="" />
+
+              <div class="selected-preview-info">
+
+                <strong id="sel-title"></strong>
+
+                <span id="sel-author"></span>
+
+              </div>
+
+              <button class="remove-btn" onclick="clearBook()">remove</button>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="btn-row" style="margin-top:18px;">
+
+            <button class="btn btn-black" id="gallery-btn" onclick="addToGallery()">Add to the Library →</button>
+
+          </div>
+
+          <div class="status-msg" id="gallery-status"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <hr class="rule">
+
+
+
+  <!-- GALLERY -->
+
+  <div id="gallery-section">
+
+    <div class="section-label">The Nightstand Library</div>
+
+    <p style="font-family:'Source Serif 4',serif;font-style:italic;font-size:0.88rem;color:#888;padding:12px 0 4px;">Books we're all aspirationally reading. Emphasis on aspirationally.</p>
+
+    <div class="cover-grid" id="cover-grid">
+
+      <div class="gallery-empty">No books yet. Be the first.</div>
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<footer>Yesteryear Book Club &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; All meetings on Zoom</footer>
+
+
+
+<script>
+
+let selectedBook = null;
+
+let searchTimer = null;
+
+
+
+function nextStage(n) {
+
+  document.querySelectorAll('.form-stage').forEach(s => s.classList.remove('active'));
+
+  document.getElementById('stage-' + n).classList.add('active');
+
+  const el = document.querySelector('.form-stage.active');
+
+  setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+
+}
+
+
+
+async function submitForm() {
+
+  const format = document.querySelector('input[name="format"]:checked')?.value;
+
+  const tz = document.getElementById('timezone').value;
+
+  const times = Array.from(document.querySelectorAll('input[name="times"]:checked')).map(e => e.value).join(', ');
+
+  const name = document.getElementById('yourname').value.trim();
+
+  const magic = document.getElementById('magic-answer').value.trim();
+
+
+
+  if (!format || !tz || !name) {
+
+    alert('Please fill in your name, timezone, and how many meetings you want.');
+
+    return;
+
+  }
+
+
+
+  const btn = document.getElementById('submit-btn');
+
+  const status = document.getElementById('submit-status');
+
+  btn.disabled = true;
+
+  status.textContent = 'Submitting...';
+
+
+
+  try {
+
+    const res = await fetch('https://formspree.io/f/xykozwda', {
+
+      method: 'POST',
+
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+
+      body: JSON.stringify({ name, timezone: tz, format, availability: times, nightstand_book: magic })
+
+    });
+
+    if (res.ok) {
+
+      nextStage('confirmation');
+
+      loadGallery();
+
+    } else { throw new Error(); }
+
+  } catch {
+
+    status.textContent = 'Something went wrong. Please try again.';
+
+    btn.disabled = false;
+
+  }
+
+}
+
+
+
+function searchBooks(q) {
+
+  clearTimeout(searchTimer);
+
+  const dd = document.getElementById('book-dropdown');
+
+  const spin = document.getElementById('search-spinner');
+
+  if (!q || q.length < 2) { dd.style.display = 'none'; return; }
+
+  spin.style.display = 'block';
+
+  searchTimer = setTimeout(async () => {
+
+    try {
+
+      const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(q)}&maxResults=6&printType=books`);
+
+      const data = await res.json();
+
+      spin.style.display = 'none';
+
+      if (!data.items?.length) {
+
+        dd.innerHTML = '<div class="no-results">No results — try a different title.</div>';
+
+        dd.style.display = 'block';
+
+        return;
+
+      }
+
+      dd._items = data.items;
+
+      dd.innerHTML = data.items.map((item, i) => {
+
+        const info = item.volumeInfo;
+
+        const cover = info.imageLinks?.thumbnail?.replace('http:', 'https:') || '';
+
+        const author = info.authors?.[0] || 'Unknown';
+
+        return `<div class="book-option" onclick="selectBook(${i})">
+
+          ${cover ? `<img src="${cover}" alt="">` : '<div style="width:32px;height:46px;background:#eee;flex-shrink:0;"></div>'}
+
+          <div class="book-option-text"><strong>${info.title}</strong><span>${author}</span></div>
+
+        </div>`;
+
+      }).join('');
+
+      dd.style.display = 'block';
+
+    } catch { spin.style.display = 'none'; }
+
+  }, 400);
+
+}
+
+
+
+function selectBook(i) {
+
+  const dd = document.getElementById('book-dropdown');
+
+  const item = dd._items[i];
+
+  const info = item.volumeInfo;
+
+  selectedBook = {
+
+    title: info.title,
+
+    author: info.authors?.[0] || 'Unknown',
+
+    cover: info.imageLinks?.thumbnail?.replace('http:', 'https:') || ''
+
+  };
+
+  document.getElementById('book-search').value = info.title;
+
+  dd.style.display = 'none';
+
+  const prev = document.getElementById('selected-preview');
+
+  const img = document.getElementById('sel-cover');
+
+  img.src = selectedBook.cover;
+
+  img.style.display = selectedBook.cover ? 'block' : 'none';
+
+  document.getElementById('sel-title').textContent = selectedBook.title;
+
+  document.getElementById('sel-author').textContent = selectedBook.author;
+
+  prev.style.display = 'flex';
+
+}
+
+
+
+function clearBook() {
+
+  selectedBook = null;
+
+  document.getElementById('book-search').value = '';
+
+  document.getElementById('selected-preview').style.display = 'none';
+
+}
+
+
+
+async function addToGallery() {
+
+  if (!selectedBook) { alert('Please search for and select a book first.'); return; }
+
+  const name = document.getElementById('yourname').value.trim() || 'A member';
+
+  const btn = document.getElementById('gallery-btn');
+
+  const status = document.getElementById('gallery-status');
+
+  btn.disabled = true;
+
+  status.textContent = 'Adding to library...';
+
+  const entry = { name, ...selectedBook, ts: Date.now() };
+
+  const key = `ybc:${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+  try {
+
+    await window.storage.set(key, JSON.stringify(entry), true);
+
+    status.textContent = '✓ Added! Scroll down to see the library.';
+
+    loadGallery();
+
+    setTimeout(() => document.getElementById('gallery-section').scrollIntoView({ behavior: 'smooth' }), 400);
+
+  } catch {
+
+    status.textContent = 'Something went wrong. Try again.';
+
+    btn.disabled = false;
+
+  }
+
+}
+
+
+
+async function loadGallery() {
+
+  const grid = document.getElementById('cover-grid');
+
+  try {
+
+    const result = await window.storage.list('ybc:', true);
+
+    const keys = result?.keys || [];
+
+    if (!keys.length) return;
+
+    const entries = (await Promise.all(keys.map(async k => {
+
+      try { const r = await window.storage.get(k, true); return r ? JSON.parse(r.value) : null; }
+
+      catch { return null; }
+
+    }))).filter(Boolean).sort((a, b) => a.ts - b.ts);
+
+    document.getElementById('gallery-section').style.display = 'block';
+
+    grid.innerHTML = entries.map(e => `
+
+      <div class="cover-card">
+
+        ${e.cover ? `<img src="${e.cover}" alt="${e.title}" loading="lazy">` : `<div style="width:100%;aspect-ratio:2/3;background:#f0f0f0;"></div>`}
+
+        <div class="c-name">${e.name}</div>
+
+        <div class="c-title">${e.title}</div>
+
+      </div>`).join('');
+
+  } catch {}
+
+}
+
+
+
+loadGallery();
+
+</script>
+
+</body>
+
+</html>
